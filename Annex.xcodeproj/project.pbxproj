@@ -37,6 +37,14 @@
 		0D126A02185A2C5800BF386C /* NSObject+Annex.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BE564116D52C87006A16D2 /* NSObject+Annex.m */; };
 		0D29E81E185AB02F00E5C893 /* NSStringCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D29E81D185AB02F00E5C893 /* NSStringCategory.m */; };
 		0D29E81F185AB0F300E5C893 /* NSString+Annex.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BE564416D52C95006A16D2 /* NSString+Annex.m */; };
+		0D3F6392186B5A48004CE731 /* AnnexStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D3F6390186B5A48004CE731 /* AnnexStack.h */; };
+		0D3F6393186B5A48004CE731 /* AnnexStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3F6391186B5A48004CE731 /* AnnexStack.m */; };
+		0D3F6396186B5E3D004CE731 /* AnnexStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3F6391186B5A48004CE731 /* AnnexStack.m */; };
+		0D3F6398186B5ED5004CE731 /* AnnexStackTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3F6397186B5ED5004CE731 /* AnnexStackTest.m */; };
+		0D3F639B186B6419004CE731 /* AnnexQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D3F6399186B6419004CE731 /* AnnexQueue.h */; };
+		0D3F639C186B6419004CE731 /* AnnexQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3F639A186B6419004CE731 /* AnnexQueue.m */; };
+		0D3F639E186B659A004CE731 /* AnnexQueueTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3F639D186B659A004CE731 /* AnnexQueueTest.m */; };
+		0D3F639F186B677B004CE731 /* AnnexQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3F639A186B6419004CE731 /* AnnexQueue.m */; };
 		4E00082417E0BC2B00BBBE9C /* NSSet+Annex.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E00082217E0BC2B00BBBE9C /* NSSet+Annex.h */; };
 		4E00082517E0BC2B00BBBE9C /* NSSet+Annex.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E00082317E0BC2B00BBBE9C /* NSSet+Annex.m */; };
 		D722FC31184CEF48004638DF /* AnnexNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = D722FC2F184CEF48004638DF /* AnnexNetwork.h */; };
@@ -119,6 +127,12 @@
 		0D1269F7185A27E000BF386C /* Annex Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Annex Tests-Prefix.pch"; sourceTree = "<group>"; };
 		0D1269FF185A2BBF00BF386C /* NSObject (Annex).m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject (Annex).m"; sourceTree = "<group>"; };
 		0D29E81D185AB02F00E5C893 /* NSStringCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringCategory.m; sourceTree = "<group>"; };
+		0D3F6390186B5A48004CE731 /* AnnexStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnexStack.h; sourceTree = "<group>"; };
+		0D3F6391186B5A48004CE731 /* AnnexStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnexStack.m; sourceTree = "<group>"; };
+		0D3F6397186B5ED5004CE731 /* AnnexStackTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnexStackTest.m; sourceTree = "<group>"; };
+		0D3F6399186B6419004CE731 /* AnnexQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnexQueue.h; sourceTree = "<group>"; };
+		0D3F639A186B6419004CE731 /* AnnexQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnexQueue.m; sourceTree = "<group>"; };
+		0D3F639D186B659A004CE731 /* AnnexQueueTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnexQueueTest.m; sourceTree = "<group>"; };
 		4E00082217E0BC2B00BBBE9C /* NSSet+Annex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+Annex.h"; sourceTree = "<group>"; };
 		4E00082317E0BC2B00BBBE9C /* NSSet+Annex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+Annex.m"; sourceTree = "<group>"; };
 		D722FC2F184CEF48004638DF /* AnnexNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnexNetwork.h; sourceTree = "<group>"; };
@@ -189,6 +203,8 @@
 				D743ED5D17F33D7100EB5AFB /* RequestOperation */,
 				D771BDDA17A16349005F9845 /* ImageCache */,
 				083F8DB316EA2F720025A312 /* Keychain */,
+				0D3F63A0186B67EC004CE731 /* Stack */,
+				0D3F63A1186B6800004CE731 /* Queue */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -342,6 +358,8 @@
 		0D1269EF185A27E000BF386C /* Annex Tests */ = {
 			isa = PBXGroup;
 			children = (
+				0D3F639D186B659A004CE731 /* AnnexQueueTest.m */,
+				0D3F6397186B5ED5004CE731 /* AnnexStackTest.m */,
 				0D29E81D185AB02F00E5C893 /* NSStringCategory.m */,
 				0D1269FF185A2BBF00BF386C /* NSObject (Annex).m */,
 				0D1269F0185A27E000BF386C /* Supporting Files */,
@@ -357,6 +375,24 @@
 				0D1269F7185A27E000BF386C /* Annex Tests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0D3F63A0186B67EC004CE731 /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				0D3F6390186B5A48004CE731 /* AnnexStack.h */,
+				0D3F6391186B5A48004CE731 /* AnnexStack.m */,
+			);
+			name = Stack;
+			sourceTree = "<group>";
+		};
+		0D3F63A1186B6800004CE731 /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				0D3F6399186B6419004CE731 /* AnnexQueue.h */,
+				0D3F639A186B6419004CE731 /* AnnexQueue.m */,
+			);
+			name = Queue;
 			sourceTree = "<group>";
 		};
 		4E00082117E0BC1300BBBE9C /* NSSet */ = {
@@ -474,6 +510,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D3F639B186B6419004CE731 /* AnnexQueue.h in Headers */,
 				08F6B82216D56C54006F12EB /* NSObject+Annex.h in Headers */,
 				08F6B82316D56C54006F12EB /* NSDate+Annex.h in Headers */,
 				08F6B82416D56C54006F12EB /* NSString+Annex.h in Headers */,
@@ -486,6 +523,7 @@
 				083F8D9E16E917FF0025A312 /* UIButton+Annex.h in Headers */,
 				D743ED6017F33D9100EB5AFB /* AnnexRequestOperation.h in Headers */,
 				D782F7F7173E87CE0070F967 /* UIAlertView+Annex.h in Headers */,
+				0D3F6392186B5A48004CE731 /* AnnexStack.h in Headers */,
 				D742334A18219D3500A33E4E /* NSURL+Annex.h in Headers */,
 				083F8DB616EA2F8B0025A312 /* AnnexKeyChain.h in Headers */,
 				D7E71B1E1796EAF4005A76AB /* NSManagedObjectContext+Annex.h in Headers */,
@@ -600,6 +638,8 @@
 				D7AC4E65184CD4EA0037F120 /* AnnexJSONObject.m in Sources */,
 				D782F7F8173E87CE0070F967 /* UIAlertView+Annex.m in Sources */,
 				4E00082517E0BC2B00BBBE9C /* NSSet+Annex.m in Sources */,
+				0D3F639C186B6419004CE731 /* AnnexQueue.m in Sources */,
+				0D3F6393186B5A48004CE731 /* AnnexStack.m in Sources */,
 				D743ED6117F33D9100EB5AFB /* AnnexRequestOperation.m in Sources */,
 				D7E71B1F1796EAF4005A76AB /* NSManagedObjectContext+Annex.m in Sources */,
 				D771BDE017A16367005F9845 /* AnnexImageCache.m in Sources */,
@@ -613,10 +653,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D3F639F186B677B004CE731 /* AnnexQueue.m in Sources */,
+				0D3F6396186B5E3D004CE731 /* AnnexStack.m in Sources */,
 				0D29E81F185AB0F300E5C893 /* NSString+Annex.m in Sources */,
 				0D126A02185A2C5800BF386C /* NSObject+Annex.m in Sources */,
+				0D3F6398186B5ED5004CE731 /* AnnexStackTest.m in Sources */,
 				0D126A00185A2BBF00BF386C /* NSObject (Annex).m in Sources */,
 				0D29E81E185AB02F00E5C893 /* NSStringCategory.m in Sources */,
+				0D3F639E186B659A004CE731 /* AnnexQueueTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
